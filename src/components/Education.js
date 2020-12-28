@@ -19,7 +19,7 @@ const Education = (props) => {
   return (
     <div className='title'>
       <i className='fa fa-graduation-cap'></i>
-      <h2>EDUCACION</h2>
+      <h2>EDUCACIÓN</h2>
       {myEducation}
     </div>
   );

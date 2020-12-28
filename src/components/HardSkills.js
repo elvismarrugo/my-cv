@@ -16,7 +16,7 @@ const HardSkills = (props) => {
   return (
     <div className='title'>
       <i className='fa fa-code'></i>
-      <h2>HABILIDADES TECNICAS</h2>
+      <h2>HABILIDADES TÉCNICAS</h2>
       {myHardSkills}
     </div>
   );

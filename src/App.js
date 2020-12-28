@@ -17,7 +17,7 @@ class App extends Component {
       email: 'elvismarrugo@gmail',
       celular: '+57 (317) 658-9172',
       bio:
-        'Developer Web | Contador Público | Especialista en Impuestos. Con mucha experiencia en automatizar procesos administrativos, contables y tributarios a través de aplicaciones en Excel VBA.',
+        'Developer Web | Contador Público | Especialista en Impuestos. Con mucha experiencia en automatizar procesos administrativos, contables y tributarios a través de Macros en Excel VBA.',
       address: 'Cartagena, Colombia.',
       social: [
         { name: 'linkedin', url: 'https://www.linkedin.com/in/elvismarrugo/' },
@@ -39,7 +39,7 @@ class App extends Component {
           startDate: 'Octubre 2014',
           endDate: 'Presente',
           jobDescription:
-            'Coordinador con área de sistemas para desarrollo e implementación de software de negocio y contable.',
+            'Coordinador área de sistemas para desarrollo e implementación de software de negocio y contable.',
         },
         {
           jobTitle: 'Profesor Universitario',
@@ -56,7 +56,7 @@ class App extends Component {
           institution: 'Platzi',
           date: 'Noviembre 2020',
           description:
-            'Sitio web que acerca a los artesanos con clientes interesados en artesanias | Mi trabajo consistió en realizar toda la configuración del codigo utilizando las siguientes tecnologias:  React.js, Redux, Next.js, Sass y Eslint, creacion y conexión base de datos en  Firebase, darle conectividad al registro e inicio de sesion con redes sociales y por ultimo hacer el despliegue de la aplicacion con Firebase.',
+            'Sitio web que acerca a los artesanos con clientes interesados en artesanias | Mi trabajo consistió en realizar toda la configuración del codigo utilizando las siguientes tecnologias:  React.js, Redux, Next.js, Sass y Eslint, creacion y conexión base de datos en Firebase, darle conectividad al registro e inicio de sesion con redes sociales y por último hacer el despliegue de la aplicación con Firebase.',
         },
       ],
       hardskills: [
@@ -89,28 +89,28 @@ class App extends Component {
           institution: 'Platzi',
           startDate: 'Enero 2018',
           endDate: 'Junio 2020',
-          description: 'Plataforma online de educacion en tecnologia.',
+          description: 'Plataforma online de educacion en tecnología.',
         },
         {
-          degree: 'Gestion Regional Investigacion e Innovación',
-          institution: 'Universidad Tecnologia de Bolivar',
+          degree: 'Gestión Regional Investigación e Innovación',
+          institution: 'Universidad Tecnológica de Bolivar',
           startDate: 'Agosto 2010',
           endDate: 'Diciembre 2010',
         },
         {
-          degree: 'Pedagogia Básica',
+          degree: 'Pedagogía Básica',
           institution: 'Servicio Nacional de Aprendizaje – SENA',
           startDate: 'Agosto 2007',
           endDate: 'Diciembre 2007',
         },
         {
-          degree: 'Especializacion en Gerencia de Impuestos',
+          degree: 'Especialización en Gerencia de Impuestos',
           institution: 'Universidad Externado de Colombia',
           startDate: 'Agosto 2003',
           endDate: 'Diciembre 2004',
         },
         {
-          degree: 'Contador Publico',
+          degree: 'Contador Público',
           institution: 'Universidad de Cartagena',
           startDate: 'Febrero 1993',
           endDate: 'Diciembre 1997',

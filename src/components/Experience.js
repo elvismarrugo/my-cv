@@ -6,7 +6,7 @@ const Experience = (props) => {
       {props.experience.map((exp) => (
         <div className='item' key={exp.jobTitle}>
           <h3>
-            {exp.jobTitle} @ {exp.company}{' '}
+            {exp.jobTitle} @ <a href={exp.website}> {exp.company}</a>{' '}
             <span>
               {exp.startDate} - {exp.endDate}
             </span>

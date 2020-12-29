@@ -6,7 +6,8 @@ const Certificate = (props) => {
       {props.certificate.map((cert) => (
         <div className='item' key={cert.name}>
           <h3>
-            {cert.name} @ {cert.institution} <span>{cert.date}</span>
+            <a href={cert.website}>{cert.name}</a>@ {cert.institution}{' '}
+            <span>{cert.date}</span>
           </h3>
           <p>{cert.description}</p>
         </div>

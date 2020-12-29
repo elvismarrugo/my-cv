@@ -28,6 +28,7 @@ class App extends Component {
         {
           jobTitle: 'Propietario',
           company: 'Eyexoft',
+          website: 'https://www.eyexoft.com/',
           startDate: 'Febrero 2002',
           endDate: 'Presente',
           jobDescription:
@@ -52,7 +53,8 @@ class App extends Component {
       ],
       certificate: [
         {
-          name: 'https://art-hispano.web.app/',
+          website: 'https://art-hispano.web.app/',
+          name: 'Art-Hispano',
           institution: 'Platzi',
           date: 'Noviembre 2020',
           description:

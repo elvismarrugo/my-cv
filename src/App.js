@@ -14,7 +14,7 @@ class App extends Component {
         'https://s.gravatar.com/avatar/3dad072061f9be6f904e0d84aaf06ce2?s=80',
       name: 'Elvis Marrugo',
       profession: 'FrontEnd Developer',
-      email: 'elvismarrugo@gmail',
+      email: 'elvismarrugo@gmail.com',
       celular: '+57 (317) 658-9172',
       bio:
         'Developer Web | Contador Público | Especialista en Impuestos. Con mucha experiencia en automatizar procesos administrativos, contables y tributarios a través de Macros en Excel VBA.',
@@ -145,10 +145,10 @@ class App extends Component {
           <div className='content-wrapper'>
             <div className='content'>
               <Experience experience={person.experience} />
-              <Education education={person.education} />
               <Certificate certificate={person.certificate} />
               <HardSkills hardskills={person.hardskills} />
               <SoftSkills softskills={person.softskills} />
+              <Education education={person.education} />
             </div>
           </div>
         </div>

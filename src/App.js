@@ -17,7 +17,7 @@ class App extends Component {
       email: 'elvismarrugo@gmail.com',
       celular: '+57 (317) 658-9172',
       bio:
-        'Developer Web | Contador Público | Especialista en Impuestos. Con mucha experiencia en automatizar procesos administrativos, contables y tributarios a través de Macros en Excel VBA.',
+        'Developer Web | Contador Público | Especialista en Impuestos. Amplia experiencia en automatizar procesos administrativos, contables y tributarios a través de Macros en Excel VBA.',
       address: 'Cartagena, Colombia.',
       social: [
         { name: 'linkedin', url: 'https://www.linkedin.com/in/elvismarrugo/' },
@@ -32,7 +32,11 @@ class App extends Component {
           startDate: 'Febrero 2002',
           endDate: 'Presente',
           jobDescription:
-            'Soluciones informáticas que simplifican el complejo mundo de los datos con Macros en Excel VBA',
+            'Soluciones informáticas que simplifican el complejo mundo de los datos con Macros en Excel VBA • Automatización cálculo de Impuestos Nacionales y Distritales.• Automatización Estados Financieros e Informes a entidades gubernamentales',
+          jobDescription1:
+            '• Automatización cálculo de Impuestos Nacionales y Distritales.',
+          jobDescription2:
+            '• Automatización Estados Financieros e Informes a entidades gubernamentales',
         },
         {
           jobTitle: 'Director de Contabilidad',
@@ -41,6 +45,10 @@ class App extends Component {
           endDate: 'Presente',
           jobDescription:
             'Coordinador área de sistemas para desarrollo e implementación de software de negocio y contable.',
+          jobDescription1:
+            '• Diseño, creación e implementación de automatización para cálculo de capacidad de endeudamiento.',
+          jobDescription2:
+            '• Enlace con área de sistemas para desarrollo e implementación de software de negocio y contable',
         },
         {
           jobTitle: 'Profesor Universitario',

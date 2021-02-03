@@ -12,6 +12,8 @@ const Experience = (props) => {
             </span>
           </h3>
           <p>{exp.jobDescription}</p>
+          <p>{exp.jobDescription1}</p>
+          <p>{exp.jobDescription2}</p>
         </div>
       ))}
     </div>

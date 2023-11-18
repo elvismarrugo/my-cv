@@ -13,11 +13,11 @@ class App extends Component {
       avatar:
         'https://s.gravatar.com/avatar/3dad072061f9be6f904e0d84aaf06ce2?s=80',
       name: 'Elvis Marrugo',
-      profession: 'FrontEnd Developer',
+      profession: 'Power BI Developer',
       email: 'elvismarrugo@gmail.com',
       celular: '+57 (317) 658-9172',
       bio:
-        'Developer Web | Contador Público | Especialista en Impuestos. Amplia experiencia en automatizar procesos administrativos, contables y tributarios a través de Macros en Excel VBA.',
+        'Power BI Developer | Web Developer | Contador Público | Especialista en Impuestos. Amplia experiencia en automatizar procesos administrativos, contables y tributarios a través de Macros en Excel VBA.',
       address: 'Cartagena, Colombia.',
       social: [
         { name: 'linkedin', url: 'https://www.linkedin.com/in/elvismarrugo/' },
@@ -27,8 +27,8 @@ class App extends Component {
       experience: [
         {
           jobTitle: 'Propietario',
-          company: 'Eyexoft',
-          website: 'https://www.eyexoft.com/',
+          company: 'Visual BI',
+          website: 'https://www.somosvisualbi.com/',
           startDate: 'Febrero 2002',
           endDate: 'Presente',
           jobDescription:
@@ -70,12 +70,13 @@ class App extends Component {
         },
       ],
       hardskills: [
-        { name: 'REACT.JS', percentage: '95%' },
+        { name: 'Power BI', percentage: '90%' },
+        { name: 'SQL SERVER', percentage: '90%' },
+        { name: 'REACT.JS', percentage: '90%' },
         { name: 'REDUX', percentage: '90%' },
         { name: 'NEXT.JS', percentage: '90%' },
         { name: 'SASS', percentage: '90%' },
         { name: 'FIREBASE', percentage: '90%' },
-        { name: 'SQL SERVER', percentage: '90%' },
       ],
       softskills: [
         { name: 'ASERTIVIDAD', percentage: '100%' },
@@ -87,18 +88,41 @@ class App extends Component {
       ],
       education: [
         {
-          degree: 'Frontend Developer',
-          institution: 'Platzi Master',
-          startDate: 'Julio 2020',
+          degree: 'Developer Power BI',
+          institution: 'DataEDU',
+          startDate: 'Julio 2023',
           endDate: 'Presente',
           description:
-            'Programa personalizado que prepara durante 3 años a los mejores estudiantes de Platzi.',
+            'Compañía de consultoría y capacitación en inteligencia de negocios.',
+        },
+        {
+          degree: 'Developer Power BI',
+          institution: '4GO Academy',
+          startDate: 'Noviembre 2022',
+          endDate: 'Julio 2023',
+          description:
+            'Empresa de Capacitación en Excel y Power BI .',
+        },
+        {
+          degree: 'Developer Power BI',
+          institution: 'Acadevor',
+          startDate: 'Febrero 2020',
+          endDate: 'Presente',
+          description:
+            'Plataforma de educacion en Power BI y Excel.',
+        },
+        {
+          degree: 'Desarrollador Software',
+          institution: 'Platzi Master',
+          startDate: 'Julio 2020',
+          endDate: 'Marzo 2022',
+          description: 'Programa personalizado que prepara durante 3 años a los mejores estudiantes de Platzi.',
         },
         {
           degree: 'Desarrollador Software',
           institution: 'Platzi',
           startDate: 'Enero 2018',
-          endDate: 'Junio 2020',
+          endDate: 'Presente',
           description: 'Plataforma online de educacion en tecnología.',
         },
         {

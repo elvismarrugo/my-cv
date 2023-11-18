@@ -165,6 +165,7 @@ class App extends Component {
             <About
               avatar={person.avatar}
               name={person.name}
+              website={person.website}
               profession={person.profession}
               email={person.email}
               celular={person.celular}

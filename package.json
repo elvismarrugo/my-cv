@@ -30,7 +30,7 @@
     ]
   },
   "engines": {
-    "node": "^20.9.0"
+    "node": "^12.22.9"
   },  
   "browserslist": {
     "production": [

@@ -26,7 +26,7 @@ class App extends Component {
       ],
       experience: [
         {
-          jobTitle: 'Propietario',
+          jobTitle: 'CEO',
           company: 'Visual BI',
           website: 'https://www.somosvisualbi.com/',
           startDate: 'Febrero 2002',

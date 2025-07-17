@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.1.4",
-    "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.1",
-    "classnames": "^2.3.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "classnames": "^2.5.1",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "nib": "^1.2.0",
     "react-scripts": "^5.0.1",
-    "stylus": "^0.62.0"
+    "stylus": "^0.63.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,7 +30,7 @@
     ]
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=18.x"
   },  
   "browserslist": {
     "production": [

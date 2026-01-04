@@ -1,17 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Education = (props) => {
+const Education = ({ education }) => {
   const myEducation = (
     <div>
-      {props.education.map((edu) => (
-        <div className='item' key={edu.degree}>
+      {education.map((edu, index) => (
+        <div className='item' key={`${edu.degree}-${index}`}>
           <h3>
             {edu.degree} @ {edu.institution}{' '}
             <span>
               {edu.startDate} - {edu.endDate}
             </span>
           </h3>
-          <p>{edu.description}</p>
+          {edu.description && <p>{edu.description}</p>}
         </div>
       ))}
     </div>
@@ -23,6 +24,18 @@ const Education = (props) => {
       {myEducation}
     </div>
   );
+};
+
+Education.propTypes = {
+  education: PropTypes.arrayOf(
+    PropTypes.shape({
+      degree: PropTypes.string.isRequired,
+      institution: PropTypes.string.isRequired,
+      startDate: PropTypes.string.isRequired,
+      endDate: PropTypes.string.isRequired,
+      description: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Education;

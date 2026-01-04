@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const SoftSkills = (props) => {
+const SoftSkills = ({ softskills }) => {
   const mySoftSkills = (
     <div>
-      {props.softskills.map((skll) => (
-        <div className='item w33' key={skll.name}>
+      {softskills.map((skll, index) => (
+        <div className='item w33' key={`${skll.name}-${index}`}>
           <h3>{skll.name}</h3>
           <div className='skills'>
             <span style={{ width: skll.percentage }}></span>
@@ -15,11 +16,20 @@ const SoftSkills = (props) => {
   );
   return (
     <div className='title'>
-      <i className='fa fa-code'></i>
+      <i className='fa fa-users'></i>
       <h2>HABILIDADES BLANDAS</h2>
       {mySoftSkills}
     </div>
   );
+};
+
+SoftSkills.propTypes = {
+  softskills: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      percentage: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default SoftSkills;

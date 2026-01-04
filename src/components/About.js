@@ -34,14 +34,15 @@ const About = ({
   );
 };
 
-// eslint-disable-next-line react/no-typos
-About.PropTypes = {
+About.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string,
   profession: PropTypes.string,
+  email: PropTypes.string,
+  celular: PropTypes.string,
   bio: PropTypes.string,
   address: PropTypes.string,
-  social: PropTypes.node,
+  social: PropTypes.array,
 };
 
 export default About;

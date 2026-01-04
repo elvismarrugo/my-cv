@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Social = (props) => {
+const Social = ({ social }) => {
   const socialNetworks = (
     <ul>
-      {props.social.map((socialNetwork) => (
-        <li key={socialNetwork.name}>
+      {social.map((socialNetwork, index) => (
+        <li key={`${socialNetwork.name}-${index}`}>
           <a href={socialNetwork.url} target='_blank' rel='noopener noreferrer'>
             <i className={'fa fa-' + socialNetwork.name + '-square'}></i>
           </a>
@@ -13,6 +14,15 @@ const Social = (props) => {
     </ul>
   );
   return <div className='social'>{socialNetworks}</div>;
+};
+
+Social.propTypes = {
+  social: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default Social;

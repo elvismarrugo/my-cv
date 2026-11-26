@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Colores y tipografías de la marca Elvix │ VBI */
+@theme {
+  --color-night: #0f0726;
+  --color-ink: #1e0f4a;
+  --color-deep: #36208a;
+  --color-royal: #5b3cc4;
+  --color-vivid: #8e6bff;
+  --color-lilac: #c9b8ff;
+  --color-mist: #e6ddff;
+  --color-amber: #f5b83d;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-night);
+}
+
+body {
+  background: var(--color-night);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Degradado oficial de la marca (135°) */
+.bg-brand {
+  background: linear-gradient(135deg, #1e0f4a 0%, #36208a 55%, #5b3cc4 100%);
+}
+
+/* Texto con degradado para titulares */
+.text-gradient {
+  background: linear-gradient(90deg, #ffffff 0%, #e6ddff 40%, #c9b8ff 70%, #8e6bff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Tarjetas tipo vidrio */
+.glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
+  border: 1px solid rgba(201, 184, 255, 0.16);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Cuadrícula sutil de fondo */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(201, 184, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 184, 255, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+}
+
+/* Línea acento de 5 px bajo títulos */
+.accent-line {
+  height: 5px;
+  width: 64px;
+  border-radius: 9999px;
+  background: #8e6bff;
+}
+
+/* Animaciones */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes grow {
+  from { transform: scaleY(0.15); }
+  to { transform: scaleY(1); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes glow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-grow { transform-origin: bottom; animation: grow 1.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.animate-blink { animation: blink 1.4s ease-in-out infinite; }
+.animate-marquee { animation: marquee 40s linear infinite; }
+.animate-glow { animation: glow 5s ease-in-out infinite; }
+
+/* Aparición al hacer scroll: solo se oculta si hay JavaScript */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-float, .animate-grow, .animate-blink, .animate-marquee, .animate-glow { animation: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Campos numéricos de la calculadora sin flechas */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
